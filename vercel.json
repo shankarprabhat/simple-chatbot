@@ -1,11 +1,10 @@
-{
-  "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index.py" },
-    { "source": "/node/(.*)", "destination": "/node/index,js" }
-  ],
+{ 
   "functions": {
     "api/index.py": {
       "runtime": "@vercel/python@4.3.0"
     }
-  }
+  },  
+  "routes": [
+    { "src": "/api/(.*)", "dest": "api/app.py" }
+  ]
 }
