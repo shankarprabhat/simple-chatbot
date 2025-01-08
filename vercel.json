@@ -1,6 +1,14 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/index" },
-    { "source": "/node/(.*)", "destination": "/node/index" }
-  ]
+    { "source": "/api/(.*)", "destination": "/api/index.py" },
+    { "source": "/node/(.*)", "destination": "/node/index,js" }
+  ],
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.9"
+    },
+    "node/index.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
 }
