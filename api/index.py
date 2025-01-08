@@ -3,6 +3,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route('/')
+def home_flask():
+    return 'Hello, flask home!'
+
 @app.route('/home')
 def home():
     return 'Hello, World to the LLM Chatbot app!'
