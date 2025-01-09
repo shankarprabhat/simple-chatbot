@@ -15,6 +15,6 @@ def home():
 def about():
     return 'Trying the about route!'
 
-# Ensure the app runs locally for testing
-if __name__ == "__main__":
-    app.run(debug=True)
+# # Ensure the app runs locally for testing
+# if __name__ == "__main__":
+#     app.run(debug=True)
