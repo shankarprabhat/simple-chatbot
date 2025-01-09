@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello, World after cache clear again!'
+    return 'Hello, World need to clear cache!'
 
 @app.route('/about')
 def about():
